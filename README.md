@@ -1,29 +1,124 @@
-# Legal Document Review Assistant
+# ⚖️ Legal Document Review Assistant
 
-## Description
-The Legal Document Review Assistant is designed to streamline the process of reviewing legal documents, providing tools to assist users in identifying key terms, clauses, and potential issues in legal texts.
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg) ![AI Powered](https://img.shields.io/badge/AI-LLM%20Powered-purple) ![License](https://img.shields.io/badge/License-MIT-green) ![Status](https://img.shields.io/badge/Status-Proof%20of%20Concept-orange)
 
-## Features
-- **Keyword Search**: Quickly find important terms within documents.
-- **Clause Analysis**: Assess specific clauses for their implications and relevance.
-- **Issue Tracking**: Keep track of flagged issues during the review process.
+> AI-powered Legal Document Review Assistant that analyzes contracts, identifies risks, extracts key clauses, and generates structured legal summaries using Large Language Models (OpenAI or Ollama).
 
-## Installation
-To install the Legal Document Review Assistant, clone the repository and install the required dependencies:
-```bash
-git clone https://github.com/sage-047/Legal-Document-Review-Assistant.git
-cd Legal-Document-Review-Assistant
-npm install
-```
+------------------------------------------------------------------------
 
-## Usage
-To start the application, run:
-```bash
-npm start
-```
+## 📌 Overview
 
-## Contributing
-We welcome contributions! Please fork the repository and submit a pull request with your changes.
+The Legal Document Review Assistant is a Proof of Concept (PoC) system that automates first-level contract review using AI.
 
-## License
-This project is licensed under the MIT License.
+It helps: - Legal teams - Compliance departments - Procurement teams - Startups reviewing vendor contracts
+
+The system extracts text from legal documents, analyzes clauses using LLMs, and generates structured risk assessments and summaries.
+
+------------------------------------------------------------------------
+
+## 🚀 Features
+
+### 📄 Document Processing
+
+-   PDF & text extraction
+-   Clean text preprocessing
+-   Structured document parsing
+
+### 🧠 AI Legal Analysis
+
+-   Executive summary generation
+-   Risk clause identification
+-   Liability & indemnity detection
+-   Obligation extraction
+-   Governing law & term detection
+-   Structured legal insights
+
+### 📊 Risk Classification
+
+-   High Risk
+-   Medium Risk
+-   Low Risk
+
+### 📑 Report Generation
+
+-   Structured review output
+-   Optional PDF report export
+
+### 🔁 Model Flexibility
+
+-   OpenAI API models (GPT-4, GPT-4o, etc.)
+-   Ollama local models (LLaMA3, Mistral)
+-   Configurable model selection
+
+------------------------------------------------------------------------
+
+## 🏗️ Architecture
+
+User Upload
+↓
+Text Extraction Engine
+↓
+Prompt Engineering Layer
+↓
+LLM (OpenAI / Ollama)
+↓
+Review Engine
+↓
+Structured Risk Output
+↓
+PDF Report Generator (Optional)
+
+------------------------------------------------------------------------
+
+## 📂 Project Structure
+
+legal-document-review-assistant/ │ ├── app.py ├── review_engine.py ├── extract_text.py ├── prompts.py ├── pdf_generator.py ├── list_models.py ├── test_ollama.py │ ├── models.txt ├── models_ollama.txt ├── requirements.txt ├── .env.example └── README.md
+
+------------------------------------------------------------------------
+
+## ⚙️ Installation
+
+### 1️⃣ Clone Repository
+
+git clone https://github.com/yourusername/legal-document-review-assistant.git
+cd legal-document-review-assistant
+
+### 2️⃣ Create Virtual Environment
+
+python -m venv venv
+source venv/bin/activate # macOS/Linux
+venv\Scripts\activate     # Windows
+
+### 3️⃣ Install Dependencies
+
+pip install -r requirements.txt
+
+------------------------------------------------------------------------
+
+## 🔑 Environment Configuration
+
+Create a `.env` file:
+
+OPENAI_API_KEY=your_openai_key_here
+MODEL_NAME=gpt-4
+USE_OLLAMA=false
+OLLAMA_MODEL=llama3
+
+------------------------------------------------------------------------
+
+## ▶️ Running the Application
+
+python app.py
+
+------------------------------------------------------------------------
+
+## ⚠️ Disclaimer
+
+This project is a Proof of Concept and does not replace professional legal advice.
+All outputs must be reviewed by qualified legal professionals before decision-making.
+
+------------------------------------------------------------------------
+
+## 📄 License
+
+MIT License
