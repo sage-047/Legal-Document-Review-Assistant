@@ -72,7 +72,21 @@ PDF Report Generator (Optional)
 
 ## 📂 Project Structure
 
-legal-document-review-assistant/ │ ├── app.py ├── review_engine.py ├── extract_text.py ├── prompts.py ├── pdf_generator.py ├── list_models.py ├── test_ollama.py │ ├── models.txt ├── models_ollama.txt ├── requirements.txt ├── .env.example └── README.md
+legal-document-review-assistant/
+│
+├── app.py
+├── review_engine.py
+├── extract_text.py
+├── prompts.py
+├── pdf_generator.py
+├── list_models.py
+├── test_ollama.py
+│
+├── models.txt
+├── models_ollama.txt
+├── requirements.txt
+├── .env.example
+└── README.md
 
 ------------------------------------------------------------------------
 
