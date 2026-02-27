@@ -118,11 +118,79 @@ MODEL_NAME=gpt-4
 USE_OLLAMA=false
 OLLAMA_MODEL=llama3
 
+If using Ollama:
+
+Install Ollama
+
+Run:
+
+ollama pull llama3
+
+Set:
+
+USE_OLLAMA=true
+
 ------------------------------------------------------------------------
 
 ## ▶️ Running the Application
 
 python app.py
+
+The application will start locally and process uploaded documents for review.
+
+------------------------------------------------------------------------
+
+## 📊 Example Output
+
+Executive Summary
+
+This agreement establishes a 24-month service relationship with automatic renewal and broad indemnification obligations.
+
+Key Risks Identified
+
+Unlimited liability clause
+
+One-sided indemnification
+
+Automatic renewal without termination safeguard
+
+Extracted Terms
+
+Term: 24 months
+
+Governing Law: California
+
+Termination Notice: 30 days
+
+------------------------------------------------------------------------
+
+## 🔐 Security & Privacy
+
+API keys stored securely in .env
+
+Supports fully local LLM deployment (Ollama)
+
+No document persistence in PoC mode
+
+Suitable for privacy-sensitive environments
+
+------------------------------------------------------------------------
+
+## 📈 Future Enhancements
+
+Clause comparison against industry templates
+
+Redline suggestions
+
+Multi-document batch processing
+
+Vector database integration
+
+Fine-tuned legal models
+
+Role-based access control
+
+Audit logging
 
 ------------------------------------------------------------------------
 
