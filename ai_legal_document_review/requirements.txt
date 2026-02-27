@@ -1,0 +1,7 @@
+streamlit
+ollama
+python-dotenv
+pymupdf
+python-docx
+google-generativeai
+reportlab
