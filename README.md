@@ -71,7 +71,6 @@ PDF Report Generator (Optional)
 ------------------------------------------------------------------------
 
 ## 📂 Project Structure
-
 legal-document-review-assistant/
 │
 ├── app.py
