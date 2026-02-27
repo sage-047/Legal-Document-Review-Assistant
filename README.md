@@ -1,64 +1,40 @@
-[legal_document_review_assistant_poc (1).md](https://github.com/user-attachments/files/24734294/legal_document_review_assistant_poc.1.md)
-# Legal Document Review Assistant – Proof of Concept (PoC)
+# Legal Document Review Assistant
 
-## Problem Statement
-Legal teams and compliance functions spend significant time manually reviewing contracts and legal documents for risk, missing clauses, and policy deviations. This process is time-consuming, inconsistent across reviewers, and difficult to scale during high volume periods.
+## Overview
+The Legal Document Review Assistant is a comprehensive tool designed to assist legal professionals in the review and analysis of legal documents. This project aims to streamline the review process, improve accuracy, and enhance productivity through automation and intelligent features.
 
-## Objective
-Demonstrate that a Generative AI–powered assistant can accelerate legal document review by extracting key clauses, flagging risks, summarizing obligations, and producing review comments with minimal human input—while keeping the human reviewer in control of final decisions.
+## Features
+- **Automated Document Review**: Quickly assess legal documents against predefined criteria.
+- **Keyword Extraction**: Identify and highlight significant terms and phrases.
+- **Annotation Tools**: Add comments and notes directly within the document.
+- **Version Control**: Maintain a history of changes for each document reviewed.
+- **Integration Support**: Easily integrates with other legal software and platforms.
 
-## Scope
-- Document ingestion (DOCX / PDF)
-- Clause extraction and classification (e.g., liability, indemnity, confidentiality)
-- Risk and deviation detection against playbooks / standards
-- Summarization (plain language + executive summary)
-- Issue list generation with suggested redlines / negotiation points
-- Audit-friendly output (review notes + clause mapping)
-- Human review workflow and feedback loop
+## Installation
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/sage-047/Legal-Document-Review-Assistant.git
+   ```
+2. Navigate to the project directory:  
+   ```bash
+   cd Legal-Document-Review-Assistant
+   ```
+3. Install dependencies:  
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Solution Overview
-The solution is an AI-assisted legal document review system powered by a Large Language Model (LLM) and orchestration workflows. It ingests legal documents, identifies key clauses, compares them to an organization’s review playbook, and generates structured review findings.
-
-## Architecture / Flow
-```text
-User (Legal Reviewer)
-   ↓
-Upload / Select Document
-   ↓
-Pre-processing (OCR / Text Extraction)
-   ↓
-Document Segmentation & Clause Detection (LLM)
-   ↓
-Policy / Playbook Retrieval (Knowledge Base)
-   ↓
-Risk Scoring & Findings Generation (LLM)
-   ↓
-Reviewer Output (Summary + Issues + Clause Map)
-   ↓
-Human Approval / Export (DOCX / PDF)
+## Usage
+To start using the Legal Document Review Assistant, run the main application script:  
+```bash
+python main.py
 ```
 
-## Key Components
-1. **User Interface**  
-   Receives documents and displays structured review results, clause highlights, and suggested edits.
+## Contributing
+We welcome contributions from the community. Please read the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
 
-2. **Document Ingestion & Pre-processing**  
-   Handles DOCX/PDF uploads, OCR (if scanned), cleaning, and normalization.
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-3. **Clause Detection & Classification Module**  
-   Detects clauses and labels them by type (e.g., termination, governing law, IP, payment terms).
-
-4. **Legal Playbook / Knowledge Base**  
-   Stores standard clause language, fallback positions, risk thresholds, and negotiation guidance.
-
-5. **Review & Risk Analysis Module**  
-   Flags deviations, missing clauses, unusual terms, and generates risk level and rationale.
-
-6. **Response / Output Generator**  
-   Produces an executive summary, obligations list, issues list, and suggested redlines or comments.
-
-7. **Automation Workflow / Orchestration**  
-   Coordinates ingestion → analysis → output generation (e.g., using n8n, Power Automate, or custom APIs).
-
-8. **Feedback Loop (Optional)**  
-   Captures reviewer decisions to improve prompts, playbooks, and future recommendations.
+## Contact
+For questions or support, please reach out to the project maintainer at sage-047@example.com.
