@@ -54,18 +54,18 @@ The system extracts text from legal documents, analyzes clauses using LLMs, and 
 
 ## 🏗️ Architecture
 
-User Upload
-↓
-Text Extraction Engine
-↓
-Prompt Engineering Layer
-↓
-LLM (OpenAI / Ollama)
-↓
-Review Engine
-↓
-Structured Risk Output
-↓
+User Upload <br>
+↓ <br>
+Text Extraction Engine <br>
+↓ <br>
+Prompt Engineering Layer <br>
+↓ <br>
+LLM (OpenAI / Ollama) <br>
+↓ <br>
+Review Engine <br>
+↓ <br>
+Structured Risk Output <br>
+↓ <br>
 PDF Report Generator (Optional)
 
 ------------------------------------------------------------------------
